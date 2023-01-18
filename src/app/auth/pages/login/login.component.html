@@ -1,0 +1,29 @@
+<form autocomplete="off" [formGroup]="myForm" (ngSubmit)="login()">
+  <div class="form-control flexColumn">
+    <div class="form-group">
+      <h1 class="h1">Login</h1>
+      <h3 class="h3">Welcome Back! Please login to your account</h3>
+
+      <div class="username flexColumn">
+        <label>
+          <span>Email</span>
+        </label>
+        <div class="flex">
+          <mat-icon>person_outline</mat-icon>
+          <input type="email" formControlName="email" />
+        </div>
+      </div>
+
+      <div class="password flexColumn">
+        <label>
+          <span>Password</span>
+        </label>
+        <input type="password" formControlName="password" />
+      </div>
+
+      <button class="btn" type="submit" [disabled]="myForm.invalid">
+        Continue
+      </button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,21 @@
+.form-control {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: beige;
+  align-items: center;
+}
+.form-group {
+  margin-top: 10%;
+}
+
+.h1 {
+  font-size: 36px;
+  font-family: monospace;
+  margin-top: 20px;
+}
+
+.h3 {
+  font-family: monospace;
+}

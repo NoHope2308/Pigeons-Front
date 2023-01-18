@@ -1,0 +1,44 @@
+<form autocomplete="off" [formGroup]="myForm" (ngSubmit)="register()">
+  <div class="form-control flexColumn">
+    <div class="form-group">
+      <h1 class="h1">Register</h1>
+      <div class="username flexColumn">
+        <label>
+          <span>Username</span>
+        </label>
+        <input type="value" formControlName="name" />
+      </div>
+
+      <div class="username flexColumn">
+        <label>
+          <span>Email</span>
+        </label>
+        <input type="email" formControlName="email" />
+      </div>
+
+      <div class="password flexColumn">
+        <label>
+          <span>Password</span>
+        </label>
+        <input type="password" formControlName="password" />
+      </div>
+
+      <div class="phone flexColumn">
+        <label>
+          <span>Phone</span>
+        </label>
+        <input type="value" formControlName="phone" />
+      </div>
+
+
+      <button
+        mat-button
+        class="logInButton"
+        type="submit"
+        [disabled]="myForm.invalid"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</form>

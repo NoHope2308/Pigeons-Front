@@ -1,0 +1,19 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  overflow: hidden;
+}
+
+.header{
+  
+}
+
+.page{
+/*  //height: 58vw; */
+ /*  width: 100%; */
+}
+
+.footer{
+ 
+}
